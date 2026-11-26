@@ -3,6 +3,15 @@ Provider: LEAKLENS_PROVIDER=claude|gemini, otherwise whichever key is set (ANTHR
 The LLM never decides anything: it only rewords what the rules found. Personal data is masked before sending."""
 import json, os, re
 
+# Load keys from a local .env file (gitignored). Lines like GEMINI_API_KEY=abc123
+if os.path.exists(".env"):
+    for line in open(".env", encoding="utf-8"):
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            if v.strip().strip('"'):
+                os.environ.setdefault(k.strip(), v.strip().strip('"'))
+
 CACHE = "cache/explanations.json"
 MODEL = os.environ.get("LEAKLENS_MODEL", "claude-sonnet-5-5")
 GEMINI_MODEL = os.environ.get("LEAKLENS_GEMINI_MODEL", "gemini-2.5-flash")
