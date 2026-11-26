@@ -1,0 +1,7 @@
+MASTER SERVICES AGREEMENT between NCBA Bank Kenya PLC and Thika Cloud Services Ltd.
+1. Fees: KES 1,959,000 per month, payable within 30 days of a valid KRA eTIMS invoice.
+2. Term: this agreement renews automatically on 2027-04-30 unless either party gives 60 days written notice.
+3. Price review: fees increase by 3% on each anniversary.
+4. Data protection: the Supplier shall comply with the Data Protection Act 2019 and process personal data only on NCBA's written instructions.
+5. Exit: NCBA may terminate on 90 days notice; the Supplier shall support transition.
+6. Audit: NCBA and the Central Bank of Kenya may audit the Supplier's controls.

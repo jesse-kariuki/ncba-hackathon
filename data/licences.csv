@@ -1,0 +1,8 @@
+licence_id,vendor_id,product,seats_paid,seats_active_90d,price_per_seat_kes_year,renewal_date
+LIC01,V303,Microsoft 365 E3,4000,2900,18000,2027-01-31
+LIC02,V303,Adobe Acrobat Pro,300,180,48000,2027-03-31
+LIC03,V303,Salesforce Service Cloud,200,140,120000,2027-02-28
+LIC04,V303,Jira Software,400,392,9000,2027-05-31
+LIC05,V303,Power BI Pro,250,244,14000,2027-01-31
+LIC06,V303,ServiceNow ITSM,120,118,95000,2027-06-30
+LIC07,V303,DocuSign,150,147,30000,2027-04-30

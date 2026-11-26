@@ -1,0 +1,252 @@
+vendor_id,vendor_name,category,kra_pin,bank_account,country,onboarded_date
+V001,Kilimani Cloud Services Ltd,cloud_hosting,P055614226D,0200249827706,KE,2024-01-25
+V002,Karen Consulting Ltd,consulting,P054539704K,0711328306011,KE,2023-11-03
+V003,Embakasi Software Ltd,software_licence,P059852897K,1234327416584,KE,2023-07-07
+V004,Kisumu Security Services Ltd,security,P051983738C,1234102314313,KE,2023-02-04
+V005,Upperhill Cloud Services Ltd,cloud_hosting,P053607983E,0711749431082,KE,2022-08-04
+V006,Upperhill Office Supplies Ltd,office_supplies,P055382463C,0711141078352,KE,2022-04-22
+V007,Machakos Telecoms Ltd,telecom,P057705062D,0200804436922,KE,2023-12-06
+V008,Nyeri Software Ltd,software_licence,P053141239K,0110523076025,KE,2023-08-30
+V009,Eldoret Office Supplies Ltd,office_supplies,P059224219B,1234488896443,KE,2023-10-13
+V010,Parklands Consulting Ltd,consulting,P057054579C,0711115191689,KE,2023-12-27
+V011,Lavington Office Supplies Ltd,office_supplies,P056160869K,0711571537429,KE,2022-05-08
+V012,Karen Telecoms Ltd,telecom,P054769851B,1234226128312,KE,2023-10-26
+V013,Coastline Facilities Management Ltd,facilities,P059186400J,0110762992051,KE,2022-03-12
+V014,Coastline Security Services Ltd,security,P054189885K,0711827744047,KE,2024-02-13
+V015,Lakeview Telecoms Ltd,telecom,P053592464G,0110995171130,KE,2023-05-17
+V016,Machakos Office Supplies Ltd,office_supplies,P057738019G,0110626422169,KE,2023-12-31
+V017,Kilimani Consulting Ltd,consulting,P054026879E,0711464883950,KE,2022-12-26
+V018,Jamhuri Telecoms Ltd,telecom,P058007741E,0110534900128,KE,2022-01-22
+V019,Highlands Facilities Management Ltd,facilities,P058979730J,0200166436383,KE,2023-04-07
+V020,Jamhuri Software Ltd,software_licence,P053777286H,0110541156077,KE,2023-01-09
+V021,Amani Cloud Services Ltd,cloud_hosting,P055833542D,0711230833665,KE,2022-02-18
+V022,Kisumu Telecoms Ltd,telecom,P058377556G,0711300593456,KE,2023-05-24
+V023,Karen Software Ltd,software_licence,P058584017C,1234194264587,KE,2024-04-09
+V024,Mlimani Software Ltd,software_licence,P056664316K,0110986090690,KE,2024-06-03
+V025,Eldoret Cloud Services Ltd,cloud_hosting,P053247055E,0711920184955,KE,2023-02-17
+V026,Gigiri Telecoms Ltd,telecom,P057928320D,1234638824588,KE,2024-03-04
+V027,Machakos Marketing Agency Ltd,marketing,P054346315E,0711406462391,KE,2023-10-24
+V028,Thika Marketing Agency Ltd,marketing,P053679603G,0711841193655,KE,2022-05-01
+V029,Kisumu Marketing Agency Ltd,marketing,P057302286B,0200801726890,KE,2024-05-30
+V030,Parklands Security Services Ltd,security,P056045519C,1234161873231,KE,2023-07-30
+V031,Lavington Marketing Agency Ltd,marketing,P056908535C,0200873430762,KE,2023-07-14
+V032,Embakasi Marketing Agency Ltd,marketing,P051781180B,0711683074772,KE,2023-08-01
+V033,Kilimani Telecoms Ltd,telecom,P055896386G,1234936626463,KE,2022-03-28
+V034,Karen Nyeri Telecoms Ltd,telecom,P059040224K,1234673772626,KE,2023-06-03
+V035,Coastline Software Ltd,software_licence,P058250013G,0110891764728,KE,2023-09-21
+V036,Lakeview Cloud Services Ltd,cloud_hosting,P051517756D,0711135106082,KE,2022-10-09
+V037,Rift Valley Telecoms Ltd,telecom,P055667852F,1234624033772,KE,2022-12-02
+V038,Kisumu Software Ltd,software_licence,P053233823C,0110669628927,KE,2023-07-31
+V039,Rift Valley Cloud Services Ltd,cloud_hosting,P054409088C,0711519544755,KE,2023-08-24
+V040,Kisumu Office Supplies Ltd,office_supplies,P052156393H,0711930568802,KE,2024-05-15
+V041,Lavington Cloud Services Ltd,cloud_hosting,P058542478H,0711536489528,KE,2022-05-04
+V042,Machakos Consulting Ltd,consulting,P057912082J,1234165475776,KE,2022-03-31
+V043,Westlands Facilities Management Ltd,facilities,P051367637C,0200931469703,KE,2022-04-24
+V044,Thika Office Supplies Ltd,office_supplies,P051336852F,0711212447665,KE,2022-03-17
+V045,Rift Valley Eldoret Office Supplies Ltd,office_supplies,P059984440H,0200611382735,KE,2022-11-03
+V046,Amani Marketing Agency Ltd,marketing,P056383277E,1234749591392,KE,2023-10-24
+V047,Kileleshwa Nyeri Marketing Agency Ltd,marketing,P056069153J,1234727588309,KE,2022-04-15
+V048,Eldoret Consulting Ltd,consulting,P051907009C,0200315066828,KE,2022-12-17
+V049,Coastline Embakasi Office Supplies Ltd,office_supplies,P059971338K,0110737721108,KE,2022-02-19
+V050,Uhuru Consulting Ltd,consulting,P052559464F,0711296354549,KE,2022-04-27
+V051,Upperhill Facilities Management Ltd,facilities,P059344540A,0110533190034,KE,2023-02-27
+V052,Eldoret Telecoms Ltd,telecom,P055164755E,1234468141835,KE,2022-10-29
+V053,Thika Security Services Ltd,security,P058529864C,0110300764570,KE,2022-06-27
+V054,Mlimani Security Services Ltd,security,P054576485G,0110320739381,KE,2023-07-05
+V055,Lavington Software Ltd,software_licence,P054704207K,0711308656189,KE,2022-04-28
+V056,Rift Valley Rift Valley Software Ltd,software_licence,P052519244G,0711639198004,KE,2022-01-11
+V057,Parklands Westlands Telecoms Ltd,telecom,P053145556K,0200244658840,KE,2023-10-07
+V058,Embakasi Telecoms Ltd,telecom,P054171246A,0110720608968,KE,2023-06-20
+V059,Highlands Security Services Ltd,security,P053843451A,0711356899846,KE,2023-11-02
+V060,Uhuru Marketing Agency Ltd,marketing,P054349848D,0200384976854,KE,2022-07-31
+V061,Gigiri Security Services Ltd,security,P053509000H,0110289630619,KE,2023-03-08
+V062,Amani Office Supplies Ltd,office_supplies,P057660764J,0110211592272,KE,2022-09-26
+V063,Coastline Parklands Cloud Services Ltd,cloud_hosting,P059667278K,0711405669440,KE,2023-10-27
+V064,Embakasi Cloud Services Ltd,cloud_hosting,P059073692E,0200487005172,KE,2022-02-23
+V065,Nakuru Security Services Ltd,security,P052062698J,1234303870775,KE,2023-06-21
+V066,Savannah Software Ltd,software_licence,P058432510F,0711690645339,KE,2022-11-29
+V067,Savannah Facilities Management Ltd,facilities,P053509536F,0200264494545,KE,2022-02-21
+V068,Kileleshwa Facilities Management Ltd,facilities,P054554677D,0711689269569,KE,2023-05-10
+V069,Gigiri Lakeview Security Services Ltd,security,P054394202C,0711839305702,KE,2023-12-24
+V070,Nyeri Kisumu Security Services Ltd,security,P056109570E,1234278763625,KE,2023-03-09
+V071,Parklands Office Supplies Ltd,office_supplies,P055665960K,0200152526165,KE,2022-07-09
+V072,Embakasi Consulting Ltd,consulting,P052138100E,0711644053844,KE,2023-07-18
+V073,Amani Consulting Ltd,consulting,P056491819C,0110982764505,KE,2023-06-13
+V074,Jamhuri Cloud Services Ltd,cloud_hosting,P058856366B,1234433280534,KE,2023-12-02
+V075,Kileleshwa Cloud Services Ltd,cloud_hosting,P053330636K,0110912906014,KE,2022-05-31
+V076,Highlands Telecoms Ltd,telecom,P051124654K,1234884812266,KE,2022-08-31
+V077,Machakos Security Services Ltd,security,P054033474J,0110468130224,KE,2022-03-28
+V078,Upperhill Karen Cloud Services Ltd,cloud_hosting,P053179482G,0200219019007,KE,2023-12-14
+V079,Nakuru Karen Facilities Management Ltd,facilities,P058711468E,0200289642463,KE,2023-07-22
+V080,Mlimani Lakeview Facilities Management Ltd,facilities,P053304005F,0200920583443,KE,2022-02-16
+V081,Uhuru Westlands Office Supplies Ltd,office_supplies,P053950904C,0110620830707,KE,2023-06-12
+V082,Westlands Telecoms Ltd,telecom,P051672073H,0110557089367,KE,2023-06-28
+V083,Mombasa Facilities Management Ltd,facilities,P058590191H,0110604834590,KE,2023-12-28
+V084,Kileleshwa Software Ltd,software_licence,P051581986F,0711258853889,KE,2023-01-17
+V085,Uhuru Telecoms Ltd,telecom,P057949018C,0110254231505,KE,2022-08-01
+V086,Kileleshwa Amani Cloud Services Ltd,cloud_hosting,P054074382B,0200683806675,KE,2022-11-27
+V087,Lavington Security Services Ltd,security,P056897756A,0110256290615,KE,2024-05-16
+V088,Mombasa Cloud Services Ltd,cloud_hosting,P054340115F,0200738834325,KE,2024-05-14
+V089,Amani Upperhill Telecoms Ltd,telecom,P059230125J,1234611005607,KE,2023-07-30
+V090,Lakeview Consulting Ltd,consulting,P057744899D,0110870631850,KE,2024-05-14
+V091,Uhuru Office Supplies Ltd,office_supplies,P059151075A,0110190118660,KE,2022-11-18
+V092,Embakasi Office Supplies Ltd,office_supplies,P052343763H,1234891285408,KE,2023-02-27
+V093,Parklands Cloud Services Ltd,cloud_hosting,P054408213D,0711409196813,KE,2024-02-04
+V094,Rift Valley Consulting Ltd,consulting,P056251441G,0200438811626,KE,2024-01-25
+V095,Parklands Software Ltd,software_licence,P057692721B,0110323577467,KE,2022-06-16
+V096,Jamhuri Thika Cloud Services Ltd,cloud_hosting,P056267145K,1234913202948,KE,2023-11-18
+V097,Rift Valley Lakeview Telecoms Ltd,telecom,P059185628D,0110667267264,KE,2022-01-20
+V098,Nyeri Office Supplies Ltd,office_supplies,P058669463B,0110939292867,KE,2023-09-18
+V099,Jamhuri Marketing Agency Ltd,marketing,P056792344G,0200423766892,KE,2022-03-28
+V100,Lavington Telecoms Ltd,telecom,P053421727J,0200620511813,KE,2023-12-30
+V101,Savannah Consulting Ltd,consulting,P053076710J,0110306616625,KE,2023-09-26
+V102,Coastline Telecoms Ltd,telecom,P054921514A,0711694933780,KE,2023-08-24
+V103,Savannah Cloud Services Ltd,cloud_hosting,P051519213H,0110479025201,KE,2024-04-12
+V104,Jamhuri Security Services Ltd,security,P058110523B,0200311394879,KE,2022-06-18
+V105,Eldoret Facilities Management Ltd,facilities,P059076540K,1234299633740,KE,2022-09-06
+V106,Kileleshwa Office Supplies Ltd,office_supplies,P054318952E,0200335090446,KE,2022-09-26
+V107,Kileleshwa Nyeri Security Services Ltd,security,P054932320G,0200428563967,KE,2023-03-12
+V108,Amani Telecoms Ltd,telecom,P058007639D,1234583153682,KE,2024-05-23
+V109,Rift Valley Security Services Ltd,security,P058700011E,0200107992185,KE,2022-05-27
+V110,Karen Cloud Services Ltd,cloud_hosting,P055065012H,0200605504475,KE,2024-04-20
+V111,Kilimani Facilities Management Ltd,facilities,P057529468D,1234336326489,KE,2022-03-09
+V112,Coastline Kilimani Software Ltd,software_licence,P052084091H,0110306658203,KE,2022-02-23
+V113,Lavington Kileleshwa Telecoms Ltd,telecom,P058319864E,0711647187810,KE,2023-12-28
+V114,Embakasi Security Services Ltd,security,P057858398H,0110783365422,KE,2022-06-20
+V115,Uhuru Cloud Services Ltd,cloud_hosting,P057456854E,0200864441874,KE,2022-05-27
+V116,Kisumu Cloud Services Ltd,cloud_hosting,P051154157J,1234439223200,KE,2022-05-29
+V117,Mombasa Machakos Office Supplies Ltd,office_supplies,P054013739A,0110653444307,KE,2023-10-28
+V118,Thika Mombasa Cloud Services Ltd,cloud_hosting,P053879023G,0110366649918,KE,2022-11-04
+V119,Rift Valley Software Ltd,software_licence,P056143048K,1234202585894,KE,2023-06-26
+V120,Mlimani Amani Marketing Agency Ltd,marketing,P059783147D,0200180662039,KE,2023-01-11
+V121,Lavington Mlimani Facilities Management Ltd,facilities,P054338530H,0711227552271,KE,2023-03-08
+V122,Westlands Lavington Security Services Ltd,security,P051686005A,0110809132123,KE,2024-02-02
+V123,Uhuru Security Services Ltd,security,P057668839H,0110277723833,KE,2023-03-25
+V124,Mombasa Telecoms Ltd,telecom,P053488634H,0110632534262,KE,2022-07-05
+V125,Machakos Cloud Services Ltd,cloud_hosting,P053844728B,0200209238468,KE,2022-10-16
+V126,Westlands Cloud Services Ltd,cloud_hosting,P056861079F,0200416428807,KE,2023-04-17
+V127,Westlands Mombasa Telecoms Ltd,telecom,P058117262D,0711216394564,KE,2022-04-17
+V128,Lakeview Software Ltd,software_licence,P059347047B,0110253139764,KE,2024-02-24
+V129,Uhuru Machakos Security Services Ltd,security,P052918079E,1234141105345,KE,2023-07-13
+V130,Kileleshwa Eldoret Security Services Ltd,security,P053786712K,1234332075643,KE,2022-12-23
+V131,Westlands Kilimani Office Supplies Ltd,office_supplies,P051440348C,0711976932479,KE,2023-06-16
+V132,Lavington Consulting Ltd,consulting,P052556542B,1234488047414,KE,2024-05-08
+V133,Nakuru Consulting Ltd,consulting,P052804542K,1234560971296,KE,2022-07-24
+V134,Kilimani Karen Facilities Management Ltd,facilities,P058883502B,1234876587717,KE,2022-11-05
+V135,Machakos Westlands Cloud Services Ltd,cloud_hosting,P054564746A,0200602672650,KE,2024-04-18
+V136,Upperhill Security Services Ltd,security,P054683937B,0110138319651,KE,2023-08-13
+V137,Upperhill Marketing Agency Ltd,marketing,P055528798J,0110258806824,KE,2023-02-25
+V138,Mombasa Marketing Agency Ltd,marketing,P055172971G,1234528544960,KE,2022-04-11
+V139,Jamhuri Office Supplies Ltd,office_supplies,P054440410J,0200703495788,KE,2024-01-29
+V140,Nyeri Embakasi Marketing Agency Ltd,marketing,P051153009C,0711637556364,KE,2024-05-26
+V141,Kileleshwa Karen Telecoms Ltd,telecom,P051406730B,0200135690309,KE,2024-04-09
+V142,Highlands Jamhuri Cloud Services Ltd,cloud_hosting,P051593277F,0110546934486,KE,2023-09-05
+V143,Uhuru Mombasa Marketing Agency Ltd,marketing,P054695807H,0711493991984,KE,2024-03-09
+V144,Uhuru Lakeview Telecoms Ltd,telecom,P059705913E,0200509408129,KE,2023-04-24
+V145,Karen Parklands Cloud Services Ltd,cloud_hosting,P054423255F,0711990279988,KE,2024-04-22
+V146,Parklands Amani Software Ltd,software_licence,P057838685K,0200750199707,KE,2022-09-24
+V147,Kisumu Nakuru Consulting Ltd,consulting,P053993320C,0110974012076,KE,2024-01-23
+V148,Savannah Security Services Ltd,security,P051597875A,0200246968057,KE,2023-08-24
+V149,Kisumu Nyeri Facilities Management Ltd,facilities,P058133660G,0711158662128,KE,2022-10-02
+V150,Kilimani Office Supplies Ltd,office_supplies,P053547579B,1234308610937,KE,2024-05-01
+V151,Jamhuri Kileleshwa Office Supplies Ltd,office_supplies,P059199476J,1234436098559,KE,2023-10-30
+V152,Embakasi Thika Office Supplies Ltd,office_supplies,P058149873K,0711494358316,KE,2023-10-02
+V153,Lavington Uhuru Telecoms Ltd,telecom,P051179053D,1234487611538,KE,2023-06-23
+V154,Nakuru Cloud Services Ltd,cloud_hosting,P058822415K,0110707941115,KE,2023-04-20
+V155,Nakuru Office Supplies Ltd,office_supplies,P052755114F,0110270457051,KE,2023-03-08
+V156,Machakos Savannah Facilities Management Ltd,facilities,P057611016D,1234817728605,KE,2023-01-21
+V157,Coastline Upperhill Consulting Ltd,consulting,P058554276J,0711938596152,KE,2023-04-30
+V158,Uhuru Software Ltd,software_licence,P055309362B,1234225010851,KE,2024-03-23
+V159,Mlimani Marketing Agency Ltd,marketing,P058841337A,0200770941214,KE,2023-08-22
+V160,Kilimani Uhuru Cloud Services Ltd,cloud_hosting,P057532030J,0200273279673,KE,2023-04-14
+V161,Nyeri Facilities Management Ltd,facilities,P055327209K,0711738262346,KE,2022-02-06
+V162,Uhuru Lavington Security Services Ltd,security,P055111878D,1234290514740,KE,2022-02-11
+V163,Amani Upperhill Software Ltd,software_licence,P054889005D,0711638781819,KE,2022-11-09
+V164,Upperhill Westlands Telecoms Ltd,telecom,P056749416E,0711570432459,KE,2022-10-19
+V165,Nyeri Consulting Ltd,consulting,P058571366C,0711178410847,KE,2022-07-06
+V166,Uhuru Highlands Cloud Services Ltd,cloud_hosting,P057012792F,1234305064440,KE,2022-08-04
+V167,Mombasa Office Supplies Ltd,office_supplies,P054736280B,1234171216706,KE,2022-04-26
+V168,Nakuru Facilities Management Ltd,facilities,P054125920E,0711966497303,KE,2024-06-11
+V169,Highlands Highlands Security Services Ltd,security,P052120966A,1234250649491,KE,2022-05-28
+V170,Parklands Marketing Agency Ltd,marketing,P059304320D,1234814713147,KE,2022-09-30
+V171,Nyeri Mombasa Facilities Management Ltd,facilities,P053671224C,0711117101842,KE,2022-04-25
+V172,Jamhuri Machakos Cloud Services Ltd,cloud_hosting,P059981848F,0110966781918,KE,2024-04-26
+V173,Nakuru Software Ltd,software_licence,P054070056B,0711481346877,KE,2022-07-01
+V174,Gigiri Facilities Management Ltd,facilities,P055017327H,0200952608946,KE,2023-02-18
+V175,Thika Cloud Services Ltd,cloud_hosting,P051079503D,0711290114308,KE,2023-02-04
+V176,Highlands Marketing Agency Ltd,marketing,P051688736J,0200925223433,KE,2022-08-04
+V177,Gigiri Marketing Agency Ltd,marketing,P058620600J,0711340346197,KE,2022-05-28
+V178,Gigiri Amani Security Services Ltd,security,P059165219F,0110826052853,KE,2022-04-10
+V179,Machakos Kilimani Facilities Management Ltd,facilities,P058008491C,0711371351496,KE,2022-07-16
+V180,Karen Lavington Security Services Ltd,security,P052538535B,0110564897319,KE,2024-03-21
+V181,Lakeview Security Services Ltd,security,P053861403A,0711539946808,KE,2023-04-22
+V182,Nyeri Mombasa Cloud Services Ltd,cloud_hosting,P057996108D,0200450255245,KE,2023-12-06
+V183,Gigiri Nyeri Marketing Agency Ltd,marketing,P057409222J,0200737636286,KE,2023-03-31
+V184,Kisumu Amani Facilities Management Ltd,facilities,P057640569A,0711628525007,KE,2022-01-25
+V185,Highlands Cloud Services Ltd,cloud_hosting,P052799550A,0110764943338,KE,2022-02-21
+V186,Uhuru Westlands Security Services Ltd,security,P055806959F,0110742150308,KE,2023-01-12
+V187,Rift Valley Office Supplies Ltd,office_supplies,P052808598H,0200177531324,KE,2023-12-13
+V188,Nyeri Karen Office Supplies Ltd,office_supplies,P059423380C,1234395001062,KE,2023-12-15
+V189,Kileleshwa Nyeri Software Ltd,software_licence,P057263217J,0711613119468,KE,2022-03-10
+V190,Karen Savannah Office Supplies Ltd,office_supplies,P052423423C,0110496770295,KE,2022-10-12
+V191,Savannah Telecoms Ltd,telecom,P057594804A,0110302859986,KE,2024-04-11
+V192,Parklands Mlimani Cloud Services Ltd,cloud_hosting,P056175674G,1234579066243,KE,2022-08-07
+V193,Westlands Amani Telecoms Ltd,telecom,P054834939B,0200199188814,KE,2023-09-23
+V194,Nyeri Rift Valley Office Supplies Ltd,office_supplies,P059220106G,1234663768984,KE,2023-04-23
+V195,Gigiri Uhuru Office Supplies Ltd,office_supplies,P055523281A,0110647078662,KE,2022-08-12
+V196,Rift Valley Facilities Management Ltd,facilities,P053610506K,0711965638807,KE,2023-09-01
+V197,Karen Marketing Agency Ltd,marketing,P053548252A,0110605955895,KE,2022-07-01
+V198,Coastline Westlands Security Services Ltd,security,P057110418C,1234305609325,KE,2022-12-20
+V199,Lakeview Parklands Security Services Ltd,security,P058537522E,0711800138394,KE,2024-05-22
+V200,Nyeri Nakuru Cloud Services Ltd,cloud_hosting,P053037409J,1234648445418,KE,2022-05-06
+V201,Parklands Facilities Management Ltd,facilities,P056235467J,1234415090954,KE,2022-02-09
+V202,Lakeview Jamhuri Software Ltd,software_licence,P052742713A,1234334524411,KE,2024-01-17
+V203,Kisumu Mombasa Software Ltd,software_licence,P054154128D,1234624966887,KE,2022-10-08
+V204,Kileleshwa Marketing Agency Ltd,marketing,P054143578B,0711874039825,KE,2024-02-22
+V205,Eldoret Jamhuri Consulting Ltd,consulting,P056854557F,1234697308464,KE,2023-12-14
+V206,Lakeview Upperhill Marketing Agency Ltd,marketing,P053126997A,0200891351561,KE,2023-12-19
+V207,Savannah Gigiri Software Ltd,software_licence,P058999013E,1234660731775,KE,2024-02-26
+V208,Machakos Machakos Software Ltd,software_licence,P055177784J,0200505968811,KE,2024-01-06
+V209,Thika Mlimani Facilities Management Ltd,facilities,P051965082E,0200319730389,KE,2022-08-10
+V210,Highlands Consulting Ltd,consulting,P052189717B,0711216883389,KE,2023-07-07
+V211,Eldoret Software Ltd,software_licence,P052824919H,1234555775011,KE,2024-02-21
+V212,Amani Gigiri Security Services Ltd,security,P058212098G,0110537892427,KE,2023-09-30
+V213,Kisumu Kisumu Telecoms Ltd,telecom,P052050336A,0110995189586,KE,2024-02-21
+V214,Mombasa Kisumu Software Ltd,software_licence,P052823906H,0110598490052,KE,2022-01-11
+V215,Parklands Upperhill Security Services Ltd,security,P059645304C,0711538543191,KE,2022-01-30
+V216,Highlands Jamhuri Telecoms Ltd,telecom,P055207244J,0711796182694,KE,2022-05-14
+V217,Rift Valley Kisumu Consulting Ltd,consulting,P058729025K,1234310568556,KE,2022-05-24
+V218,Jamhuri Nakuru Security Services Ltd,security,P054959725E,0110192352716,KE,2024-05-08
+V219,Uhuru Facilities Management Ltd,facilities,P055691140J,0711886932286,KE,2023-08-26
+V220,Savannah Upperhill Software Ltd,software_licence,P053243546D,0110235608676,KE,2022-07-24
+V221,Nakuru Telecoms Ltd,telecom,P052264379E,0200693925686,KE,2023-07-18
+V222,Mlimani Facilities Management Ltd,facilities,P059629101F,0200354257614,KE,2023-10-15
+V223,Uhuru Nakuru Marketing Agency Ltd,marketing,P059877751H,0200312548616,KE,2023-09-30
+V224,Upperhill Telecoms Ltd,telecom,P057070375K,0200614655733,KE,2022-08-25
+V225,Savannah Office Supplies Ltd,office_supplies,P051220268J,0110972239317,KE,2024-01-15
+V226,Lakeview Kilimani Facilities Management Ltd,facilities,P052137683B,0110579888913,KE,2023-08-26
+V227,Mlimani Gigiri Software Ltd,software_licence,P051441357D,1234154740212,KE,2023-06-12
+V228,Mlimani Machakos Telecoms Ltd,telecom,P051839286E,0110732263942,KE,2022-12-30
+V229,Karen Kileleshwa Cloud Services Ltd,cloud_hosting,P052894922K,0200484128039,KE,2023-11-09
+V230,Highlands Savannah Telecoms Ltd,telecom,P058387790E,1234709049343,KE,2022-11-16
+V231,Nakuru Parklands Consulting Ltd,consulting,P054226049J,0110556502904,KE,2022-05-14
+V232,Coastline Eldoret Consulting Ltd,consulting,P052277412C,0110276763565,KE,2022-02-24
+V233,Kisumu Parklands Cloud Services Ltd,cloud_hosting,P051699652E,0711867465756,KE,2023-10-13
+V234,Kisumu Parklands Software Ltd,software_licence,P051611180B,1234862864148,KE,2022-09-16
+V235,Kileleshwa Uhuru Office Supplies Ltd,office_supplies,P051283563H,1234295828423,KE,2022-01-04
+V236,Nyeri Kisumu Cloud Services Ltd,cloud_hosting,P051392144K,0200235832849,KE,2022-01-23
+V237,Nakuru Eldoret Security Services Ltd,security,P055615562A,1234284336848,KE,2022-08-05
+V238,Coastline Gigiri Consulting Ltd,consulting,P059756078H,1234736834208,KE,2023-07-23
+V239,Nyeri Embakasi Office Supplies Ltd,office_supplies,P051840890G,0711582094659,KE,2023-09-27
+V240,Upperhill Amani Office Supplies Ltd,office_supplies,P058431337D,0200597889349,KE,2023-09-02
+V301,Zoom Video Communications (KE reseller),video_conferencing,P054252186K,0711429377560,KE,2023-08-18
+V302,Webex by Cisco - Amani Tech Ltd,video_conferencing,P056975532D,0110784195511,KE,2024-02-22
+V303,Teams Rooms - Rift Valley Cloud Ltd,video_conferencing,P053115310A,1234222980417,KE,2022-04-04
+V304,Savannah SMS Gateway Ltd,sms_gateway,P053593308J,1234285089731,KE,2024-04-02
+V305,Jamhuri Bulk SMS Ltd,sms_gateway,P051850733E,0200335168266,KE,2024-05-22
+V901,Lakeview Consulting Limited,consulting,P057744899D,0110870631850,KE,2023-12-19
+V902,Uhuru Telecoms Limited,telecom,P057949018C,0110254231505,KE,2023-08-19
+V903,Highlands Cloud Services Limited,cloud_hosting,P052799550A,0110764943338,KE,2023-12-03
+V306,Westlands IT Consulting Ltd,consulting,P057993284F,0110424593087,KE,2023-10-25
+V307,Lavington Facilities Management Ltd,facilities,P055505739H,0711954769398,KE,2023-04-10
+V308,CloudNest Hosting Ltd,cloud_hosting,P054278491D,0200546092601,IE,2024-04-16

@@ -1,0 +1,178 @@
+[
+ {
+  "leak_id": "L10",
+  "detector": "D2_overlap",
+  "vendor_id": "V301",
+  "kes_impact": 6180000
+ },
+ {
+  "leak_id": "L11",
+  "detector": "D2_overlap",
+  "vendor_id": "V305",
+  "kes_impact": 1800000
+ },
+ {
+  "leak_id": "L01",
+  "detector": "D1_duplicate",
+  "vendor_id": "V055",
+  "invoice_ids": [
+   "INV-V055-00652",
+   "INVV05500652"
+  ],
+  "kes_impact": 678390
+ },
+ {
+  "leak_id": "L02",
+  "detector": "D1_duplicate",
+  "vendor_id": "V199",
+  "invoice_ids": [
+   "INV-V199-02385",
+   "INVV19902385"
+  ],
+  "kes_impact": 1272290
+ },
+ {
+  "leak_id": "L03",
+  "detector": "D1_duplicate",
+  "vendor_id": "V182",
+  "invoice_ids": [
+   "INV-V182-02175",
+   "INVV18202175"
+  ],
+  "kes_impact": 1818090
+ },
+ {
+  "leak_id": "L04",
+  "detector": "D1_duplicate",
+  "vendor_id": "V075",
+  "invoice_ids": [
+   "INV-V075-00894",
+   "INV-V075-00894A"
+  ],
+  "kes_impact": 1051550
+ },
+ {
+  "leak_id": "L05",
+  "detector": "D1_duplicate",
+  "vendor_id": "V041",
+  "invoice_ids": [
+   "INV-V041-00489",
+   "INV-V041-00489A"
+  ],
+  "kes_impact": 340830
+ },
+ {
+  "leak_id": "L06",
+  "detector": "D1_duplicate",
+  "vendor_id": "V010",
+  "invoice_ids": [
+   "INV-V010-00120",
+   "INV-V010-00120A"
+  ],
+  "kes_impact": 878922
+ },
+ {
+  "leak_id": "L07",
+  "detector": "D1_duplicate",
+  "vendor_id": "V901",
+  "invoice_ids": [
+   "INV-V090-01080",
+   "INV-V901-02947"
+  ],
+  "kes_impact": 761100
+ },
+ {
+  "leak_id": "L08",
+  "detector": "D1_duplicate",
+  "vendor_id": "V902",
+  "invoice_ids": [
+   "INV-V085-01016",
+   "INV-V902-02948"
+  ],
+  "kes_impact": 2387350
+ },
+ {
+  "leak_id": "L09",
+  "detector": "D1_duplicate",
+  "vendor_id": "V903",
+  "invoice_ids": [
+   "INV-V185-02217",
+   "INV-V903-02949"
+  ],
+  "kes_impact": 48910
+ },
+ {
+  "leak_id": "L20",
+  "detector": "D5_anomaly",
+  "vendor_id": "V306",
+  "invoice_ids": [
+   "INV-V306-02962",
+   "INV-V306-02963",
+   "INV-V306-02964"
+  ],
+  "kes_impact": 2910000
+ },
+ {
+  "leak_id": "L21",
+  "detector": "D5_anomaly",
+  "vendor_id": "V307",
+  "kes_impact": 1500000
+ },
+ {
+  "leak_id": "L30",
+  "detector": "D4_contract",
+  "vendor_id": "V304",
+  "kes_impact": 216000
+ },
+ {
+  "leak_id": "L31",
+  "detector": "D4_contract",
+  "vendor_id": "V303",
+  "kes_impact": 177600
+ },
+ {
+  "leak_id": "L32",
+  "detector": "D4_contract",
+  "vendor_id": "V308",
+  "kes_impact": 1200000
+ },
+ {
+  "leak_id": "L40",
+  "detector": "D6_vendor_risk",
+  "vendor_id": "V308",
+  "kes_impact": 0
+ },
+ {
+  "leak_id": "L41",
+  "detector": "D6_vendor_risk",
+  "vendor_id": "V305",
+  "kes_impact": 0
+ },
+ {
+  "leak_id": "L42",
+  "detector": "D6_vendor_risk",
+  "vendor_id": "V306",
+  "kes_impact": 0
+ },
+ {
+  "leak_id": "L51",
+  "detector": "D3_unused_licences",
+  "vendor_id": "V303",
+  "product": "Microsoft 365 E3",
+  "kes_impact": 19800000
+ },
+ {
+  "leak_id": "L52",
+  "detector": "D3_unused_licences",
+  "vendor_id": "V303",
+  "product": "Adobe Acrobat Pro",
+  "kes_impact": 5760000
+ },
+ {
+  "leak_id": "L53",
+  "detector": "D3_unused_licences",
+  "vendor_id": "V303",
+  "product": "Salesforce Service Cloud",
+  "kes_impact": 7200000
+ }
+]

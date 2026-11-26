@@ -1,0 +1,6 @@
+MASTER SERVICES AGREEMENT between NCBA Bank Kenya PLC and CloudNest Hosting Ltd.
+1. Fees: KES 500,000 per month, payable within 30 days of a valid KRA eTIMS invoice.
+2. Term: this agreement expires on 2027-06-30.
+3. Price review: fees increase by 5% on each anniversary.
+5. Exit: NCBA may terminate on 90 days notice; the Supplier shall support transition.
+7. Data location: customer data is hosted in IE.
