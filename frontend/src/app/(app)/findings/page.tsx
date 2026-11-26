@@ -55,7 +55,7 @@ function FindingsInner() {
                 <td className="p-3"><Severity s={f.severity} /></td>
                 <td className="p-3 font-medium"><Link href={`/findings/${f.finding_id}`}>{f.title}</Link></td>
                 <td className="p-3 text-muted">{f.vendor_name}</td>
-                <td className="p-3 text-right font-semibold">{f.kes_impact ? kes(f.kes_impact) : "risk"}</td>
+                <td className="p-3 text-right font-semibold whitespace-nowrap">{f.kes_impact ? kes(f.kes_impact) : "risk"}</td>
                 <td className="p-3 text-right">{Math.round(f.confidence * 100)}%</td>
                 <td className="p-3"><Status s={f.status} /></td>
               </tr>

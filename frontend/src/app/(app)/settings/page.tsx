@@ -21,13 +21,14 @@ export default function Settings() {
   useEffect(() => { api.health().then((h) => setProviders(h.ai_providers)).catch(() => setProviders(["unreachable"])); }, []);
   return (
     <div className="space-y-6">
-      <PageTitle title="Settings" sub="Rules decide. These thresholds are owned by procurement and versioned in the audit trail." />
+      <PageTitle title="Settings" sub="Rules decide. These thresholds are owned by procurement. Read-only in this demo." />
       <section className="card divide-y divide-line">
         {RULES.map(([k, v]) => <div key={k} className="flex justify-between gap-4 p-4 text-sm"><span>{k}</span><b>{v}</b></div>)}
       </section>
       <section className="card p-5 text-sm">
         <h2 className="font-semibold">AI provider</h2>
-        <p className="mt-1">Active: <b>{providers.join(", ") || "…"}</b>. Set <code>GEMINI_API_KEY</code> or <code>ANTHROPIC_API_KEY</code> in <code>.env</code>. Without a key, template explanations are used.</p>
+        <p className="mt-1">Configured: <b>{providers.join(", ") || "…"}</b>. Set <code>GEMINI_API_KEY</code> or <code>ANTHROPIC_API_KEY</code> in <code>.env</code>.</p>
+        <p className="mt-1">If the provider is unavailable or over quota, LeakLens falls back to template explanations. Each explanation is labelled with its real source (AI · Gemini, AI · Claude or template).</p>
         <p className="mt-1 text-muted">The AI only explains and drafts. It never decides, and personal data is masked before any text is sent.</p>
       </section>
       <section className="card p-5 text-sm">

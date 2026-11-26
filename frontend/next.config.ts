@@ -5,6 +5,7 @@ const API = process.env.LEAKLENS_API_URL || "http://127.0.0.1:8000";
 
 const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
+  devIndicators: false,
   async rewrites() {
     return [{ source: "/api/:path*", destination: `${API}/api/:path*` }];
   },

@@ -60,7 +60,7 @@ export default function Scan() {
           </ul>
           <div className="mt-6 border-t border-line pt-4">
             <div className="text-sm text-muted">Avoidable spend found so far</div>
-            <div className="text-4xl font-extrabold text-gold">{kes(counter)}</div>
+            <div className="text-4xl font-extrabold text-gold">{result ? kes(counter) : "Scanning…"}</div>
           </div>
         </div>
         {err && <p className="mt-4 rounded-lg bg-risk/10 p-3 text-risk">Scan failed: {err} <button className="underline" onClick={() => router.push("/connect")}>Back</button></p>}

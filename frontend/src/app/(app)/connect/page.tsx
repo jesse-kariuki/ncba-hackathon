@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CheckCircle2, Database, FileText, KeyRound, Receipt, Upload } from "lucide-react";
-import { Logo } from "@/components/Logo";
 import { uploadStore } from "@/lib/api";
 
 const SOURCES = [
@@ -30,9 +29,9 @@ export default function Connect() {
   };
 
   return (
-    <div className="mx-auto max-w-4xl p-6 md:p-10">
-      <Logo />
-      <p className="mt-8 text-sm font-semibold uppercase tracking-wider text-brand">Reuse</p>
+    <div className="mx-auto max-w-4xl">
+      <div className="mb-6 flex gap-2 text-xs font-semibold tracking-wider text-muted"><span className="text-brand">1 CONNECT</span><span>—</span><span>2 SCAN</span><span>—</span><span>3 REVIEW</span></div>
+      <p className="text-sm font-semibold uppercase tracking-wider text-brand">Reuse</p>
       <h1 className="text-3xl font-bold">Connect the data you already have</h1>
       <p className="mt-1 text-muted">No new system. LeakLens reuses your existing exports.</p>
 

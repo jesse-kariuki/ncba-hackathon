@@ -37,14 +37,15 @@ def detect_d1(dfs, V):
     out, seen = [], set()
     inv = dfs["invoices"]
     # (a) repeated eTIMS number
-    for et, g in inv.groupby("etims_number"):
+    # only invoices that share an eTIMS number / vendor+amount can be duplicates: filter first (100x faster)
+    for et, g in inv[inv.duplicated("etims_number", keep=False)].groupby("etims_number"):
         if len(g) > 1 and g["amount_kes"].nunique() == 1:
             r = g.sort_values("paid_date").to_dict("records")
             seen.add(frozenset(x["invoice_id"] for x in r))
             out.append(F("D1_duplicate", "Same invoice paid twice", V[r[0]["vendor_id"]], r[0]["amount_kes"] * (len(r) - 1), 0.97,
                          [ev(x) for x in r], "same KRA eTIMS number and amount on two paid invoices", "request_credit_note"))
     # (b) same vendor + amount within 45 days, near-identical invoice ids
-    for (vid, amt), g in inv.groupby(["vendor_id", "amount_kes"]):
+    for (vid, amt), g in inv[inv.duplicated(["vendor_id", "amount_kes"], keep=False)].groupby(["vendor_id", "amount_kes"]):
         r = g.sort_values("invoice_date").to_dict("records")
         for a, b in zip(r, r[1:]):
             if frozenset([a["invoice_id"], b["invoice_id"]]) in seen:
