@@ -1,0 +1,5 @@
+pandas>=2.0
+streamlit>=1.30
+faker>=20.0
+rapidfuzz>=3.0
+anthropic>=0.40

@@ -1,0 +1,20 @@
+[
+  {"finding_id":"F-0001","detector":"D1_duplicate","title":"Same invoice paid twice","vendor_id":"V007","vendor_name":"Kilimani Office Supplies Ltd","kes_impact":1840000,"confidence":0.97,"severity":"high",
+   "evidence":[{"label":"INV-2026-0418","detail":"eTIMS KRAMW0042026000318 · KES 1,840,000 · paid 2026-03-04"},{"label":"INV2026418","detail":"eTIMS KRAMW0042026000318 · KES 1,840,000 · paid 2026-03-19"}],
+   "rule_reason":"same etims_number and amount, paid 15 days apart","suggested_action":"request_credit_note","explanation":null,"status":"open"},
+  {"finding_id":"F-0002","detector":"D3_unused_licences","title":"1,100 idle Microsoft 365 seats","vendor_id":"V031","vendor_name":"Microsoft 365 (via Rift Valley Cloud Ltd)","kes_impact":19800000,"confidence":0.95,"severity":"high",
+   "evidence":[{"label":"Seats paid","detail":"4,000"},{"label":"Active last 90 days","detail":"2,900"},{"label":"Price per seat / year","detail":"KES 18,000"}],
+   "rule_reason":"1,100 seats with no sign-in in 90 days × KES 18,000","suggested_action":"cancel_seats","explanation":null,"status":"open"},
+  {"finding_id":"F-0003","detector":"D2_overlap","title":"3 video-conferencing tools in use","vendor_id":"V044","vendor_name":"Zoom / Webex / Teams Rooms","kes_impact":6200000,"confidence":0.9,"severity":"high",
+   "evidence":[{"label":"Zoom","detail":"KES 3.1m / yr"},{"label":"Webex","detail":"KES 3.1m / yr"},{"label":"Teams Rooms","detail":"KES 4.4m / yr (keep, bundled with M365)"}],
+   "rule_reason":"3 active vendors in category video_conferencing","suggested_action":"consolidate_vendor","explanation":null,"status":"open"},
+  {"finding_id":"F-0004","detector":"D4_contract","title":"Auto-renews in 23 days, notice deadline in 8","vendor_id":"V012","vendor_name":"Savannah SMS Gateway Ltd","kes_impact":1800000,"confidence":0.92,"severity":"high",
+   "evidence":[{"label":"Renewal date","detail":"2026-12-19"},{"label":"Notice period","detail":"30 days → give notice by 2026-12-04"},{"label":"Escalation","detail":"12% per year"}],
+   "rule_reason":"auto_renew true, notice deadline within 30 days, escalation above 7%","suggested_action":"give_notice","explanation":null,"status":"open"},
+  {"finding_id":"F-0005","detector":"D5_anomaly","title":"Purchase split under approval limit","vendor_id":"V088","vendor_name":"Westlands IT Consulting","kes_impact":2910000,"confidence":0.88,"severity":"high",
+   "evidence":[{"label":"INV-88-201","detail":"KES 980,000 · 2026-09-08"},{"label":"INV-88-202","detail":"KES 975,000 · 2026-09-09"},{"label":"INV-88-205","detail":"KES 955,000 · 2026-09-11"}],
+   "rule_reason":"3 invoices in 4 days, each 95–98% of the KES 1,000,000 approval limit","suggested_action":"investigate","explanation":null,"status":"open"},
+  {"finding_id":"F-0006","detector":"D6_vendor_risk","title":"No data-protection clause; customer data stored in Ireland","vendor_id":"V019","vendor_name":"CloudNest Hosting","kes_impact":0,"confidence":0.93,"severity":"high",
+   "evidence":[{"label":"Contract","detail":"no data-protection clause, no audit-rights clause"},{"label":"Data location","detail":"IE (outside Kenya)"}],
+   "rule_reason":"processes_customer_data true, data_location IE, has_data_protection_clause false","suggested_action":"request_addendum","explanation":null,"status":"open"}
+]
