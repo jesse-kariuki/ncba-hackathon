@@ -2,11 +2,11 @@
 
 /* LeakLens brand tokens: swap these when the Claude Design output lands */
 :root {
-  --bg: #f6f8fa;
+  --bg: #f5f6f4;
   --surface: #ffffff;
   --ink: #12263a;
-  --muted: #5b6b7c;
-  --line: #e3e8ee;
+  --muted: #556677;
+  --line: #e1e5e8;
   --brand: #0b6e4f;
   --brand-2: #18a374;
   --gold: #f2a900;
@@ -15,12 +15,14 @@
 }
 :root[data-theme="dark"] {
   --bg: #0e1f2f;
-  --surface: #142a3e;
-  --ink: #eaf1f7;
+  --surface: #132a3f;
+  --ink: #e7edf2;
   --muted: #9fb3c8;
-  --line: #22405a;
-  --brand: #18a374;
-  --brand-2: #2fc590;
+  --line: #243c52;
+  --brand: #3cc08f;
+  --brand-2: #3cc08f;
+  --rule: #8eaaf0;
+  --risk: #f2897f;
 }
 
 @theme inline {
@@ -42,7 +44,10 @@ body {
   color: var(--ink);
   font-feature-settings: "tnum" 1;
 }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--rule); outline-offset: 2px; border-radius: 6px; }
+body { font-feature-settings: "tnum" 1, "cv11" 1; -webkit-font-smoothing: antialiased; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
 }

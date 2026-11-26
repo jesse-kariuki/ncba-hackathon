@@ -79,6 +79,7 @@ export default function Connect() {
         className="mt-8 rounded-xl bg-brand px-6 py-3 text-lg font-semibold text-white shadow disabled:opacity-40">
         Scan 12 months →
       </button>
+      <p className="mt-3 text-sm text-muted">Read-only. Nothing is changed in your systems.</p>
     </div>
   );
 }
