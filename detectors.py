@@ -27,8 +27,10 @@ def load(d):
     inv = pd.read_csv(f"{d}/invoices.csv", parse_dates=["invoice_date", "paid_date"])
     for c in ["invoice_date", "paid_date"]:
         inv[c] = inv[c].dt.date.astype(str)
-    return dict(vendors=pd.read_csv(f"{d}/vendors.csv", dtype=str), invoices=inv,
-                licences=pd.read_csv(f"{d}/licences.csv"), contracts=json.load(open(f"{d}/contracts_extracted.json")))
+    lic_cols = ["licence_id", "vendor_id", "product", "seats_paid", "seats_active_90d", "price_per_seat_kes_year", "renewal_date"]
+    lic = pd.read_csv(f"{d}/licences.csv") if os.path.exists(f"{d}/licences.csv") else pd.DataFrame(columns=lic_cols)
+    con = json.load(open(f"{d}/contracts_extracted.json")) if os.path.exists(f"{d}/contracts_extracted.json") else []
+    return dict(vendors=pd.read_csv(f"{d}/vendors.csv", dtype=str), invoices=inv, licences=lic, contracts=con)
 
 
 def detect_d1(dfs, V):
@@ -166,7 +168,7 @@ def detect_d6(dfs, V):
     return out
 
 
-def run_all(data_dir="data"):
+def run_all(data_dir="data", out_path="out/findings.json"):
     dfs = load(data_dir)
     V = {r["vendor_id"]: r for r in dfs["vendors"].to_dict("records")}
     f = []
@@ -175,8 +177,9 @@ def run_all(data_dir="data"):
     f.sort(key=lambda x: (-x["kes_impact"], x["detector"]))
     for i, x in enumerate(f, 1):
         x["finding_id"] = f"F-{i:04d}"
-    os.makedirs("out", exist_ok=True)
-    json.dump(f, open("out/findings.json", "w"), indent=1, default=str)
+    if out_path:
+        os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+        json.dump(f, open(out_path, "w"), indent=1, default=str)
     return f
 
 

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* LeakLens brand tokens: swap these when the Claude Design output lands */
+:root {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --ink: #12263a;
+  --muted: #5b6b7c;
+  --line: #e3e8ee;
+  --brand: #0b6e4f;
+  --brand-2: #18a374;
+  --gold: #f2a900;
+  --rule: #2b59c3;
+  --risk: #c8372d;
+}
+:root[data-theme="dark"] {
+  --bg: #0e1f2f;
+  --surface: #142a3e;
+  --ink: #eaf1f7;
+  --muted: #9fb3c8;
+  --line: #22405a;
+  --brand: #18a374;
+  --brand-2: #2fc590;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-2: var(--brand-2);
+  --color-gold: var(--gold);
+  --color-rule: var(--rule);
+  --color-risk: var(--risk);
+  --font-sans: var(--font-inter), "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-feature-settings: "tnum" 1;
+}
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+}

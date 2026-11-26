@@ -1,0 +1,12 @@
+{
+  "name": "LeakLens",
+  "short_name": "LeakLens",
+  "description": "Find the leaks before you pay.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#0E1F2F",
+  "theme_color": "#0B6E4F",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
