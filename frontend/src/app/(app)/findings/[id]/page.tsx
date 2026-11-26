@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, Bot, Gavel, Lock, Mail, X } from "lucide-react";
@@ -12,19 +12,26 @@ function useExplanation(id: string) {
   const [text, setText] = useState("");
   const [source, setSource] = useState<string | null>(null);
   const [email, setEmail] = useState("");
-  const once = useRef("");
   useEffect(() => {
-    if (once.current === id) return;
-    once.current = id;
+    let closed = false;
     setText(""); setSource(null);
     const es = new EventSource(`/api/findings/${id}/explain/stream`);
     es.onmessage = (e) => {
+      if (closed) return;
       const d = JSON.parse(e.data);
       if (d.token) setText((t) => t + d.token);
       if (d.done) { setSource(d.source); setEmail(d.vendor_email); es.close(); }
     };
-    es.onerror = () => es.close();
-    return () => es.close();
+    // If streaming fails (proxy, network), fall back to the plain JSON endpoint so the box never hangs.
+    es.onerror = () => {
+      es.close();
+      if (closed) return;
+      fetch(`/api/findings/${id}/explain`).then((r) => r.json()).then((x) => {
+        if (closed) return;
+        setText(x.explanation); setSource(x.source ?? "template"); setEmail(x.vendor_email);
+      }).catch(() => {});
+    };
+    return () => { closed = true; es.close(); };
   }, [id]);
   return { text, source, email, setEmail };
 }

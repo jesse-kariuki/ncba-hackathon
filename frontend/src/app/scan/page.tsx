@@ -17,10 +17,13 @@ export default function Scan() {
   const [result, setResult] = useState<Summary | null>(null);
   const started = useRef(false);
 
+  // Scan exactly once (guarded), but the ticking checklist must survive React's dev double-mount.
   useEffect(() => {
     if (started.current) return;
     started.current = true;
     api.scan(uploadStore.files).then(setResult).catch((e) => setErr(e.message));
+  }, []);
+  useEffect(() => {
     const id = setInterval(() => setStep((s) => Math.min(s + 1, STEPS.length)), 650);
     return () => clearInterval(id);
   }, []);
