@@ -14,7 +14,7 @@ if os.path.exists(".env"):
 
 CACHE = "cache/explanations.json"
 MODEL = os.environ.get("LEAKLENS_MODEL", "claude-sonnet-5-5")
-GEMINI_MODEL = os.environ.get("LEAKLENS_GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("LEAKLENS_GEMINI_MODEL", "gemini-3.8-flash")
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
 
 ACTION_TXT = {"hold_payment": "hold any further payment until this is resolved", "request_credit_note": "request a credit note",

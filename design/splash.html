@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LeakLens splash</title>
+<style>
+:root{--bg:#0E1F2F;--green:#18A374;--gold:#F2A900;--ink:#fff}
+html,body{margin:0;height:100%;background:var(--bg);display:grid;place-items:center;font-family:Inter,Segoe UI,Arial,sans-serif;overflow:hidden}
+.stage{display:flex;flex-direction:column;align-items:center;gap:18px}
+svg{width:180px;height:180px;overflow:visible}
+.ring{stroke-dasharray:190;stroke-dashoffset:190;animation:draw .9s .1s ease-out forwards}
+.handle{stroke-dasharray:40;stroke-dashoffset:40;animation:draw .35s .9s ease-out forwards}
+.drop{transform:translateY(-120px);opacity:0;animation:fall .7s 1.1s cubic-bezier(.5,0,.75,0) forwards, settle .35s 1.8s ease-out forwards}
+.scan{opacity:0;animation:scan 1.1s 2.1s ease-in-out forwards}
+.word{font-size:44px;font-weight:800;color:var(--ink);letter-spacing:.5px;opacity:0;transform:translateY(10px);animation:up .6s 2.4s ease-out forwards}
+.word b{color:var(--green)}
+.tag{color:#9FB3C8;font-size:15px;opacity:0;animation:up .6s 2.8s ease-out forwards}
+.k{color:var(--gold);font-weight:700}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fall{0%{opacity:1;transform:translateY(-120px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes settle{0%{transform:scale(1,.8)}100%{opacity:1;transform:scale(1)}}
+@keyframes scan{0%{opacity:0;transform:translateY(-22px)}30%{opacity:.9}100%{opacity:0;transform:translateY(22px)}}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:1ms!important;animation-delay:0s!important}}
+</style></head>
+<body><div class="stage">
+<svg viewBox="0 0 100 100" aria-hidden="true">
+  <circle class="ring" cx="44" cy="44" r="30" fill="none" stroke="var(--green)" stroke-width="8"/>
+  <line class="handle" x1="66" y1="66" x2="88" y2="88" stroke="var(--green)" stroke-width="10" stroke-linecap="round"/>
+  <g class="drop" style="transform-origin:44px 56px">
+    <path d="M44 26 C44 26 31 42 31 50 a13 13 0 0 0 26 0 C57 42 44 26 44 26Z" fill="var(--gold)"/>
+  </g>
+  <rect class="scan" x="18" y="43" width="52" height="3" rx="1.5" fill="#fff"/>
+</svg>
+<div class="word">Leak<b>Lens</b></div>
+<div class="tag">Find the <span class="k">leaks</span> before you pay.</div>
+</div></body></html>

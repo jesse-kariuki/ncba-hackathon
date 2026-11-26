@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-label="LeakLens">
+  <!-- Mark: a lens catching a falling drop (the leak) -->
+  <g transform="translate(8 8)">
+    <circle cx="36" cy="36" r="28" fill="none" stroke="#0B6E4F" stroke-width="8"/>
+    <line x1="56" y1="56" x2="76" y2="76" stroke="#0B6E4F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M36 18 C36 18 24 33 24 41 a12 12 0 0 0 24 0 C48 33 36 18 36 18Z" fill="#F2A900"/>
+    <path d="M31 40 a5 5 0 0 0 5 6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+  </g>
+  <text x="100" y="62" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" fill="#12263A">Leak<tspan fill="#0B6E4F">Lens</tspan></text>
+</svg>

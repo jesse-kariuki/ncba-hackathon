@@ -1,0 +1,574 @@
+[
+ {
+  "detector": "D3_unused_licences",
+  "title": "1,100 idle Microsoft 365 E3 seats",
+  "vendor_id": "V303",
+  "vendor_name": "Teams Rooms - Rift Valley Cloud Ltd",
+  "kes_impact": 19800000,
+  "confidence": 0.95,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Seats paid",
+    "detail": "4,000"
+   },
+   {
+    "label": "Active last 90 days",
+    "detail": "2,900"
+   },
+   {
+    "label": "Price per seat / year",
+    "detail": "KES 18,000"
+   },
+   {
+    "label": "Renewal",
+    "detail": "2027-01-31"
+   }
+  ],
+  "rule_reason": "1,100 seats with no sign-in in 90 days \u00d7 KES 18,000",
+  "suggested_action": "cancel_seats",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0001"
+ },
+ {
+  "detector": "D3_unused_licences",
+  "title": "60 idle Salesforce Service Cloud seats",
+  "vendor_id": "V303",
+  "vendor_name": "Teams Rooms - Rift Valley Cloud Ltd",
+  "kes_impact": 7200000,
+  "confidence": 0.95,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Seats paid",
+    "detail": "200"
+   },
+   {
+    "label": "Active last 90 days",
+    "detail": "140"
+   },
+   {
+    "label": "Price per seat / year",
+    "detail": "KES 120,000"
+   },
+   {
+    "label": "Renewal",
+    "detail": "2027-02-28"
+   }
+  ],
+  "rule_reason": "60 seats with no sign-in in 90 days \u00d7 KES 120,000",
+  "suggested_action": "cancel_seats",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0002"
+ },
+ {
+  "detector": "D2_overlap",
+  "title": "3 video-conferencing tools paid for the same job",
+  "vendor_id": "V302",
+  "vendor_name": "Webex by Cisco - Amani Tech Ltd",
+  "kes_impact": 6180000,
+  "confidence": 0.9,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Webex by Cisco - Amani Tech Ltd",
+    "detail": "KES 3,060,000 / yr"
+   },
+   {
+    "label": "Zoom Video Communications (KE reseller)",
+    "detail": "KES 3,120,000 / yr"
+   },
+   {
+    "label": "Teams Rooms - Rift Valley Cloud Ltd",
+    "detail": "KES 4,440,000 / yr (keep)"
+   }
+  ],
+  "rule_reason": "3 active vendors in category video_conferencing; consolidate to one",
+  "suggested_action": "consolidate_vendor",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0003"
+ },
+ {
+  "detector": "D3_unused_licences",
+  "title": "120 idle Adobe Acrobat Pro seats",
+  "vendor_id": "V303",
+  "vendor_name": "Teams Rooms - Rift Valley Cloud Ltd",
+  "kes_impact": 5760000,
+  "confidence": 0.95,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Seats paid",
+    "detail": "300"
+   },
+   {
+    "label": "Active last 90 days",
+    "detail": "180"
+   },
+   {
+    "label": "Price per seat / year",
+    "detail": "KES 48,000"
+   },
+   {
+    "label": "Renewal",
+    "detail": "2027-03-31"
+   }
+  ],
+  "rule_reason": "120 seats with no sign-in in 90 days \u00d7 KES 48,000",
+  "suggested_action": "cancel_seats",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0004"
+ },
+ {
+  "detector": "D5_anomaly",
+  "title": "Purchase split under the approval limit",
+  "vendor_id": "V306",
+  "vendor_name": "Westlands IT Consulting Ltd",
+  "kes_impact": 2910000,
+  "confidence": 0.88,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "INV-V306-02962",
+    "detail": "KES 980,000 \u00b7 2026-09-08"
+   },
+   {
+    "label": "INV-V306-02963",
+    "detail": "KES 975,000 \u00b7 2026-09-09"
+   },
+   {
+    "label": "INV-V306-02964",
+    "detail": "KES 955,000 \u00b7 2026-09-10"
+   }
+  ],
+  "rule_reason": "3 invoices within 7 days, each 90\u2013100% of the KES 1,000,000 approval limit",
+  "suggested_action": "investigate",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0005"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Paid twice via a duplicate vendor record",
+  "vendor_id": "V902",
+  "vendor_name": "Uhuru Telecoms Limited",
+  "kes_impact": 2387350,
+  "confidence": 0.9,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "INV-V085-01016",
+    "detail": "eTIMS KRAMW004202600105177 \u00b7 KES 2,387,350 \u00b7 paid 2026-07-28"
+   },
+   {
+    "label": "INV-V902-02948",
+    "detail": "eTIMS KRAMW004202600114881 \u00b7 KES 2,387,350 \u00b7 paid 2026-07-27"
+   },
+   {
+    "label": "Shared details",
+    "detail": "2 vendor records share bank account and KRA PIN"
+   }
+  ],
+  "rule_reason": "two vendor records with the same bank account and KRA PIN were each paid the same amount",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0006"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Same invoice paid twice",
+  "vendor_id": "V182",
+  "vendor_name": "Nyeri Mombasa Cloud Services Ltd",
+  "kes_impact": 1818090,
+  "confidence": 0.97,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "INV-V182-02175",
+    "detail": "eTIMS KRAMW004202600111071 \u00b7 KES 1,818,090 \u00b7 paid 2026-03-05"
+   },
+   {
+    "label": "INVV18202175",
+    "detail": "eTIMS KRAMW004202600111071 \u00b7 KES 1,818,090 \u00b7 paid 2026-03-17"
+   }
+  ],
+  "rule_reason": "same KRA eTIMS number and amount on two paid invoices",
+  "suggested_action": "request_credit_note",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0007"
+ },
+ {
+  "detector": "D2_overlap",
+  "title": "2 SMS gateways paid for the same job",
+  "vendor_id": "V304",
+  "vendor_name": "Savannah SMS Gateway Ltd",
+  "kes_impact": 1800000,
+  "confidence": 0.9,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Jamhuri Bulk SMS Ltd",
+    "detail": "KES 1,680,000 / yr (keep)"
+   },
+   {
+    "label": "Savannah SMS Gateway Ltd",
+    "detail": "KES 1,800,000 / yr"
+   }
+  ],
+  "rule_reason": "2 active vendors in category sms_gateway; consolidate to one",
+  "suggested_action": "consolidate_vendor",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0008"
+ },
+ {
+  "detector": "D5_anomaly",
+  "title": "Spend spike: 6.0\u00d7 normal in 2026-07",
+  "vendor_id": "V307",
+  "vendor_name": "Lavington Facilities Management Ltd",
+  "kes_impact": 1501360,
+  "confidence": 0.8,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "2026-07",
+    "detail": "KES 1,800,000"
+   },
+   {
+    "label": "Typical month",
+    "detail": "KES 298,640"
+   }
+  ],
+  "rule_reason": "month spend 6.0\u00d7 the vendor's median month",
+  "suggested_action": "investigate",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0009"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Same invoice paid twice",
+  "vendor_id": "V199",
+  "vendor_name": "Lakeview Parklands Security Services Ltd",
+  "kes_impact": 1272290,
+  "confidence": 0.97,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "INV-V199-02385",
+    "detail": "eTIMS KRAMW004202600112114 \u00b7 KES 1,272,290 \u00b7 paid 2026-08-30"
+   },
+   {
+    "label": "INVV19902385",
+    "detail": "eTIMS KRAMW004202600112114 \u00b7 KES 1,272,290 \u00b7 paid 2026-09-10"
+   }
+  ],
+  "rule_reason": "same KRA eTIMS number and amount on two paid invoices",
+  "suggested_action": "request_credit_note",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0010"
+ },
+ {
+  "detector": "D4_contract",
+  "title": "Billed above the contract rate",
+  "vendor_id": "V308",
+  "vendor_name": "CloudNest Hosting Ltd",
+  "kes_impact": 1200000,
+  "confidence": 0.9,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Contract rate",
+    "detail": "KES 500,000 / month"
+   },
+   {
+    "label": "Typical month billed",
+    "detail": "KES 600,000 / month"
+   }
+  ],
+  "rule_reason": "typical monthly invoice 20% above contract rate",
+  "suggested_action": "renegotiate",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0011"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Likely duplicate invoice",
+  "vendor_id": "V075",
+  "vendor_name": "Kileleshwa Cloud Services Ltd",
+  "kes_impact": 1051550,
+  "confidence": 0.85,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "INV-V075-00894",
+    "detail": "eTIMS KRAMW004202600104577 \u00b7 KES 1,051,550 \u00b7 paid 2026-06-01"
+   },
+   {
+    "label": "INV-V075-00894A",
+    "detail": "eTIMS KRAMW004202600114851 \u00b7 KES 1,051,550 \u00b7 paid 2026-06-22"
+   }
+  ],
+  "rule_reason": "same vendor and amount 20 days apart; invoice numbers 96% similar",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0012"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Likely duplicate invoice",
+  "vendor_id": "V010",
+  "vendor_name": "Parklands Consulting Ltd",
+  "kes_impact": 878922,
+  "confidence": 0.85,
+  "severity": "medium",
+  "evidence": [
+   {
+    "label": "INV-V010-00120",
+    "detail": "eTIMS KRAMW004202600100601 \u00b7 KES 878,922 \u00b7 paid 2026-11-23"
+   },
+   {
+    "label": "INV-V010-00120A",
+    "detail": "eTIMS KRAMW004202600114869 \u00b7 KES 878,922 \u00b7 paid 2026-12-16"
+   }
+  ],
+  "rule_reason": "same vendor and amount 20 days apart; invoice numbers 96% similar",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0013"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Paid twice via a duplicate vendor record",
+  "vendor_id": "V901",
+  "vendor_name": "Lakeview Consulting Limited",
+  "kes_impact": 761100,
+  "confidence": 0.9,
+  "severity": "medium",
+  "evidence": [
+   {
+    "label": "INV-V090-01080",
+    "detail": "eTIMS KRAMW004202600105485 \u00b7 KES 761,100 \u00b7 paid 2026-11-16"
+   },
+   {
+    "label": "INV-V901-02947",
+    "detail": "eTIMS KRAMW004202600114876 \u00b7 KES 761,100 \u00b7 paid 2026-11-21"
+   },
+   {
+    "label": "Shared details",
+    "detail": "2 vendor records share bank account and KRA PIN"
+   }
+  ],
+  "rule_reason": "two vendor records with the same bank account and KRA PIN were each paid the same amount",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0014"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Same invoice paid twice",
+  "vendor_id": "V055",
+  "vendor_name": "Lavington Software Ltd",
+  "kes_impact": 678390,
+  "confidence": 0.97,
+  "severity": "medium",
+  "evidence": [
+   {
+    "label": "INV-V055-00652",
+    "detail": "eTIMS KRAMW004202600103316 \u00b7 KES 678,390 \u00b7 paid 2026-04-01"
+   },
+   {
+    "label": "INVV05500652",
+    "detail": "eTIMS KRAMW004202600103316 \u00b7 KES 678,390 \u00b7 paid 2026-04-07"
+   }
+  ],
+  "rule_reason": "same KRA eTIMS number and amount on two paid invoices",
+  "suggested_action": "request_credit_note",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0015"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Likely duplicate invoice",
+  "vendor_id": "V041",
+  "vendor_name": "Lavington Cloud Services Ltd",
+  "kes_impact": 340830,
+  "confidence": 0.85,
+  "severity": "medium",
+  "evidence": [
+   {
+    "label": "INV-V041-00489",
+    "detail": "eTIMS KRAMW004202600102443 \u00b7 KES 340,830 \u00b7 paid 2026-08-13"
+   },
+   {
+    "label": "INV-V041-00489A",
+    "detail": "eTIMS KRAMW004202600114860 \u00b7 KES 340,830 \u00b7 paid 2026-08-31"
+   }
+  ],
+  "rule_reason": "same vendor and amount 20 days apart; invoice numbers 96% similar",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0016"
+ },
+ {
+  "detector": "D4_contract",
+  "title": "Auto-renews in 23 days, notice deadline in 9",
+  "vendor_id": "V304",
+  "vendor_name": "Savannah SMS Gateway Ltd",
+  "kes_impact": 216000,
+  "confidence": 0.92,
+  "severity": "medium",
+  "evidence": [
+   {
+    "label": "Renewal date",
+    "detail": "2026-12-19"
+   },
+   {
+    "label": "Notice period",
+    "detail": "14 days \u2192 give notice by 2026-12-05"
+   },
+   {
+    "label": "Price increase on renewal",
+    "detail": "12%"
+   }
+  ],
+  "rule_reason": "auto-renews; notice deadline 2026-12-05 is within 30 days; 12% increase applies",
+  "suggested_action": "give_notice",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0017"
+ },
+ {
+  "detector": "D4_contract",
+  "title": "Auto-renews in 24 days, notice deadline in 3",
+  "vendor_id": "V303",
+  "vendor_name": "Teams Rooms - Rift Valley Cloud Ltd",
+  "kes_impact": 177600,
+  "confidence": 0.92,
+  "severity": "low",
+  "evidence": [
+   {
+    "label": "Renewal date",
+    "detail": "2026-12-20"
+   },
+   {
+    "label": "Notice period",
+    "detail": "21 days \u2192 give notice by 2026-11-29"
+   },
+   {
+    "label": "Price increase on renewal",
+    "detail": "4%"
+   }
+  ],
+  "rule_reason": "auto-renews; notice deadline 2026-11-29 is within 30 days; 4% increase applies",
+  "suggested_action": "give_notice",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0018"
+ },
+ {
+  "detector": "D1_duplicate",
+  "title": "Paid twice via a duplicate vendor record",
+  "vendor_id": "V903",
+  "vendor_name": "Highlands Cloud Services Limited",
+  "kes_impact": 48910,
+  "confidence": 0.9,
+  "severity": "low",
+  "evidence": [
+   {
+    "label": "INV-V185-02217",
+    "detail": "eTIMS KRAMW004202600111260 \u00b7 KES 48,910 \u00b7 paid 2026-08-21"
+   },
+   {
+    "label": "INV-V903-02949",
+    "detail": "eTIMS KRAMW004202600114886 \u00b7 KES 48,910 \u00b7 paid 2026-09-05"
+   },
+   {
+    "label": "Shared details",
+    "detail": "2 vendor records share bank account and KRA PIN"
+   }
+  ],
+  "rule_reason": "two vendor records with the same bank account and KRA PIN were each paid the same amount",
+  "suggested_action": "hold_payment",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0019"
+ },
+ {
+  "detector": "D6_vendor_risk",
+  "title": "No data-protection, audit-rights clause; customer data stored in IE",
+  "vendor_id": "V308",
+  "vendor_name": "CloudNest Hosting Ltd",
+  "kes_impact": 0,
+  "confidence": 0.93,
+  "severity": "high",
+  "evidence": [
+   {
+    "label": "Missing clauses",
+    "detail": "data-protection, audit-rights"
+   },
+   {
+    "label": "Customer data location",
+    "detail": "IE"
+   }
+  ],
+  "rule_reason": "contract checked against Data Protection Act 2019 and CBK third-party guidance",
+  "suggested_action": "request_addendum",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0020"
+ },
+ {
+  "detector": "D6_vendor_risk",
+  "title": "No data-protection clause",
+  "vendor_id": "V305",
+  "vendor_name": "Jamhuri Bulk SMS Ltd",
+  "kes_impact": 0,
+  "confidence": 0.93,
+  "severity": "low",
+  "evidence": [
+   {
+    "label": "Missing clauses",
+    "detail": "data-protection"
+   }
+  ],
+  "rule_reason": "contract checked against Data Protection Act 2019 and CBK third-party guidance",
+  "suggested_action": "request_addendum",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0021"
+ },
+ {
+  "detector": "D6_vendor_risk",
+  "title": "No data-protection, exit clause",
+  "vendor_id": "V306",
+  "vendor_name": "Westlands IT Consulting Ltd",
+  "kes_impact": 0,
+  "confidence": 0.93,
+  "severity": "low",
+  "evidence": [
+   {
+    "label": "Missing clauses",
+    "detail": "data-protection, exit"
+   }
+  ],
+  "rule_reason": "contract checked against Data Protection Act 2019 and CBK third-party guidance",
+  "suggested_action": "request_addendum",
+  "explanation": null,
+  "status": "open",
+  "finding_id": "F-0022"
+ }
+]
