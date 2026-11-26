@@ -8,8 +8,8 @@ st.set_page_config(page_title="LeakLens", page_icon="🔎", layout="wide")
 st.markdown("""<style>
 .big{font-size:3.2rem;font-weight:800;color:#0b6e4f;line-height:1.1}
 .sub{color:#666}
-.rule{background:#eef4ff;border-left:4px solid #2b59c3;padding:.6rem .9rem;border-radius:6px}
-.ai{background:#f3fbf6;border-left:4px solid #0b6e4f;padding:.6rem .9rem;border-radius:6px}
+.rule{background:#eef4ff;border:1px solid #c9d6f3;padding:.6rem .9rem;border-radius:6px}
+.ai{background:#f3fbf6;border:1px solid #bfddcf;padding:.6rem .9rem;border-radius:6px}
 </style>""", unsafe_allow_html=True)
 
 DET = {"D1_duplicate": "Duplicates", "D2_overlap": "Overlapping vendors", "D3_unused_licences": "Idle licences",

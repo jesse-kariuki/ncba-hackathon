@@ -112,12 +112,12 @@ export default function FindingDetail() {
       </section>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <section className="rounded-xl border-l-4 border-rule bg-rule/5 p-5">
+        <section className="rounded-xl border border-rule/25 bg-rule/5 p-5">
           <div className="flex items-center gap-2 font-semibold text-rule"><Gavel size={18} /> Why the rules flagged it</div>
           <p className="mt-2">{f.rule_reason}</p>
           <p className="mt-2 text-xs text-muted">Deterministic rule · confidence {Math.round(f.confidence * 100)}% · the AI cannot change this decision</p>
         </section>
-        <section className="rounded-xl border-l-4 border-brand bg-brand/5 p-5">
+        <section className="rounded-xl border border-brand/25 bg-brand/5 p-5">
           <div className="flex items-center gap-2 font-semibold text-brand"><Bot size={18} /> Explanation ({ex.source === "gemini" ? "AI · Gemini" : ex.source === "claude" ? "AI · Claude" : ex.source ? "template" : "writing…"})</div>
           <p className="mt-2 min-h-12">{ex.text}<span className={ex.source ? "hidden" : "animate-pulse"}>▍</span></p>
         </section>
