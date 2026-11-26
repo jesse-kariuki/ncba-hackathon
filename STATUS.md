@@ -1,13 +1,21 @@
-# STATUS board (each person edits ONLY their own row and commits it with their work)
+# STATUS: ONE HOUR LEFT. The plan has changed.
 
-| Person | Owns | Done | Doing now | Blocked on |
-|---|---|---|---|---|
-| P1: Data + Contracts + Pitch | generate_data.py, extract_contracts.py, data/, PITCH.md | – | starting | – |
-| P2: Detection engine (integrator) | detectors.py, test_detectors.py, out/findings.json | – | starting | – |
-| P3: App + AI | app.py, explain.py, cache/ | – | starting | – |
+**The app is DONE and pushed:** data generator, rules engine (22/22 planted leaks found, 0 false positives, KES 56.0m), and the Streamlit app with approvals and an audit log.
+**Nobody builds new features now.** Everyone pulls, runs it, and works on the PITCH.
 
-## Checkpoints (everyone pulls and runs the full pipeline at each one)
-- **T+45 min:** P1 pushes data v1. P2 switches from sample data to real data.
-- **T+90 min:** P2 pushes findings.json v1. P3 switches from sample findings to real findings.
-- **T+120 min:** **FEATURE FREEZE.** Only fixes after this. P1 records the backup demo video.
-- **T+150 min:** rehearse the pitch twice, timed.
+```
+git pull
+pip install -r requirements.txt
+streamlit run app.py
+```
+`out/findings.json` is committed, so the app works without regenerating.
+
+| Who | Next 40 minutes | Done? |
+|---|---|---|
+| **Person 1: slides** | Build the 7-slide deck from tasks/P1 section 3 and docs/SOLUTION.md (Canva or Google Slides). Use the headline numbers from the app. | |
+| **Person 2: demo driver** | Run the app on the presenting laptop, rehearse the 3-minute click path in tasks/P3 ("Demo script"), then **record the backup video** of it on screen. | |
+| **Person 3: script + Q&A** | Write the spoken script (hook → problem → demo → theme mapping → why NCBA → ask). Learn the 3 judge answers in docs/SOLUTION.md. Time the full run. | |
+
+**Last 10 minutes:** a full rehearsal together, timed at 3 minutes.
+
+**Optional, only if someone has an `ANTHROPIC_API_KEY`:** set it and run `python explain.py`. That fills `cache/explanations.json` with real Claude explanations. Commit it. Otherwise the template explanations are used.
