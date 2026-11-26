@@ -1,9 +1,12 @@
-"""Explanations + vendor emails. Cache first, live Claude only if ANTHROPIC_API_KEY is set, template fallback.
+"""Explanations + vendor emails. Cache first, then a live LLM, then a template fallback.
+Provider: LEAKLENS_PROVIDER=claude|gemini, otherwise whichever key is set (ANTHROPIC_API_KEY or GEMINI_API_KEY/GOOGLE_API_KEY).
 The LLM never decides anything: it only rewords what the rules found. Personal data is masked before sending."""
 import json, os, re
 
 CACHE = "cache/explanations.json"
 MODEL = os.environ.get("LEAKLENS_MODEL", "claude-sonnet-5-5")
+GEMINI_MODEL = os.environ.get("LEAKLENS_GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
 
 ACTION_TXT = {"hold_payment": "hold any further payment until this is resolved", "request_credit_note": "request a credit note",
               "cancel_seats": "cancel the idle seats at renewal", "consolidate_vendor": "consolidate onto one vendor",
@@ -39,35 +42,68 @@ def _template(f):
     return {"explanation": exp, "vendor_email": email, "source": "template"}
 
 
-def _live(f):
-    import anthropic
-    c = anthropic.Anthropic(timeout=10)
-    prompt = ("You explain procurement findings to an NCBA Bank procurement manager. The RULES already decided this is a "
+def _prompt(f):
+    return ("You explain procurement findings to an NCBA Bank procurement manager. The RULES already decided this is a "
               "finding; do not second-guess it and do not invent any numbers or facts not in the JSON.\n"
               "Return JSON with keys 'explanation' (2 plain sentences: why the rules flagged it and the cost or risk) and "
               "'vendor_email' (short, polite, firm email to the vendor citing the evidence, signed 'Procurement, NCBA Bank Kenya').\n\n"
               + _mask(f))
-    r = c.messages.create(model=MODEL, max_tokens=600, messages=[{"role": "user", "content": prompt}])
-    t = r.content[0].text
+
+
+def _parse(t, source):
     d = json.loads(t[t.find("{"): t.rfind("}") + 1])
-    return {"explanation": d["explanation"], "vendor_email": d["vendor_email"], "source": "claude"}
+    return {"explanation": d["explanation"], "vendor_email": d["vendor_email"], "source": source}
+
+
+def _claude(f):
+    import anthropic
+    c = anthropic.Anthropic(timeout=10)
+    prompt = _prompt(f)
+    r = c.messages.create(model=MODEL, max_tokens=600, messages=[{"role": "user", "content": prompt}])
+    return _parse(r.content[0].text, "claude")
+
+
+def _gemini(f):
+    import urllib.request
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+    body = {"contents": [{"parts": [{"text": _prompt(f)}]}],
+            "generationConfig": {"responseMimeType": "application/json", "maxOutputTokens": 800}}
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
+                                 headers={"Content-Type": "application/json", "x-goog-api-key": GEMINI_KEY})
+    with urllib.request.urlopen(req, timeout=10) as r:
+        d = json.load(r)
+    return _parse(d["candidates"][0]["content"]["parts"][0]["text"], "gemini")
+
+
+def _providers():
+    pref = os.environ.get("LEAKLENS_PROVIDER", "").lower()
+    avail = {"claude": bool(os.environ.get("ANTHROPIC_API_KEY")), "gemini": bool(GEMINI_KEY)}
+    order = [pref] + [p for p in ("claude", "gemini") if p != pref] if pref in avail else ["claude", "gemini"]
+    return [p for p in order if avail[p]]
+
+
+_SEEN = {}  # in-process memo so a failing provider isn't retried on every Streamlit rerun
 
 
 def get_explanation(f):
+    if f["finding_id"] in _SEEN:
+        return _SEEN[f["finding_id"]]
     cache = _load()
     if f["finding_id"] in cache:
         return cache[f["finding_id"]]
     out = None
-    if os.environ.get("ANTHROPIC_API_KEY"):
+    for p in _providers():
         try:
-            out = _live(f)
+            out = (_claude if p == "claude" else _gemini)(f)
+            break
         except Exception:
             out = None
     out = out or _template(f)
-    if out["source"] == "claude":
+    if out["source"] != "template":
         cache[f["finding_id"]] = out
         os.makedirs("cache", exist_ok=True)
         json.dump(cache, open(CACHE, "w"), indent=1)
+    _SEEN[f["finding_id"]] = out
     return out
 
 

@@ -93,7 +93,7 @@ for tab, (k, label) in zip(tabs, DET.items()):
                     st.table(pd.DataFrame(f["evidence"]).set_index("label"))
                 st.markdown(f'<div class="rule"><b>Why the rules flagged it</b> (deterministic, confidence {f["confidence"]:.0%})<br>{f["rule_reason"]}</div>', unsafe_allow_html=True)
                 x = get_explanation(f)
-                st.markdown(f'<div class="ai"><b>Explanation (AI{"" if x.get("source") == "claude" else " template"})</b><br>{x["explanation"]}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="ai"><b>Explanation ({ {"claude": "AI · Claude", "gemini": "AI · Gemini"}.get(x.get("source"), "template") })</b><br>{x["explanation"]}</div>', unsafe_allow_html=True)
                 with st.popover("✉️ Draft email to vendor"):
                     st.code(x["vendor_email"], language=None)
                 a1, a2, _ = st.columns([1, 1, 3])
