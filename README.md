@@ -30,6 +30,15 @@ Then paste the prompt from your task file.
 python generate_data.py && python detectors.py && streamlit run app.py
 ```
 
+## Pitch
+Slides outline, script and judge Q&A: [PITCH.md](PITCH.md). Claude Design brief, logo and splash: [design/](design/)
+
+## Full website (Next.js + FastAPI)
+```
+uvicorn backend.main:app --port 8000
+cd frontend && npm install && npm run dev   # http://localhost:3000
+```
+
 ## Docs
 - [docs/SOLUTION.md](docs/SOLUTION.md): the full solution, demo flow and judge Q&A
 - [docs/RESEARCH.md](docs/RESEARCH.md): research on all 6 challenges, with sources
