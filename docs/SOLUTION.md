@@ -4,11 +4,7 @@
 LeakLens reads NCBA's invoices, contracts and licence lists. Fixed rules find duplicate payments, overlapping vendors, unused seats and risky contracts, and AI explains each finding and drafts the fix. Nothing is paid, held or cancelled without a manager's approval.
 
 ## The problem (the opening hook)
-- NCBA's FY2025 operating costs were **KES 37.5bn, up 17%**. The cost-to-income ratio is about **52%** and the target is **45%**.
-- Industry benchmarks: duplicate and erroneous payments are **0.8–2% of disbursements** (APQC), and **46–53% of SaaS licences go unused or underused** (Zylo).
-- That works out to **KES 8–20m lost per KES 1bn of vendor spend**, from duplicates alone.
-- CBK's draft guidance on third-party tech vendors (consultation closed 7 Nov 2026) says banks must monitor their vendors. A CBK survey found **26% of banks can't**.
-- Today procurement and accounts payable catch these leaks by hand, with spreadsheets and annual audits, *after* the money has gone.
+NCBA's operating costs increased by 17% to KES 37.5 billion in FY2025, while its cost-to-income ratio remains above its 45% target. Potential losses from duplicate payments, erroneous transactions and unused software licences further increase unnecessary expenditure. However, procurement and accounts payable teams still rely on manual processes and periodic audits to identify these issues, often after payments have been made. This creates an opportunity for an automated solution that monitors vendor spending, detects errors and identifies unnecessary costs before money is lost.
 
 ## Users
 - **Procurement manager.** Sees the findings, approves actions and negotiates with vendors.
